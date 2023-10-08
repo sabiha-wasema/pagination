@@ -1,4 +1,5 @@
 import "./CountryCard.css";
+import { object } from "prop-types";
 
 const CountryCard = (props) => {
   //   console.log(props.country.name);
@@ -13,6 +14,9 @@ const CountryCard = (props) => {
       </div>
     </div>
   );
+};
+CountryCard.propTypes = {
+  country: object,
 };
 
 export default CountryCard;
